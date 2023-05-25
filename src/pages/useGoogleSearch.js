@@ -8,7 +8,7 @@ const useGoogleSearch = (term) => {
   
   useEffect(() => {
     const fetchData = async() => {
-        fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyBaniSYv6d-c1oO4M0NBaApcaZr-bWJuNA&cx=b7db92d0d00274a99&q=+${term}`)
+        fetch(`https://www.googleapis.com/customsearch/v1?=+${term}`)
 
             .then(response => response.json())
             .then(result => {
